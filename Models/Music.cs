@@ -15,7 +15,6 @@ namespace moment4_webbapi.Models
         public string? ArtistName { get; set; }
         public string? Title { get; set; }
         public int Length { get; set; }
-        public string? Genre { get; set; }
         //FK
         public int CategoryId { get; set; }
         //navigation property

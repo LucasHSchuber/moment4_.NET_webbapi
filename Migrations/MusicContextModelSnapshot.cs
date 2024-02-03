@@ -41,9 +41,6 @@ namespace moment4_webbapi.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Genre")
-                        .HasColumnType("TEXT");
-
                     b.Property<int>("Length")
                         .HasColumnType("INTEGER");
 

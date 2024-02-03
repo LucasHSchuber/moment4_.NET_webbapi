@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace moment4_webbapi.Migrations
 {
     [DbContext(typeof(MusicContext))]
-    [Migration("20240203152755_InitialCreate")]
+    [Migration("20240203160046_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -43,9 +43,6 @@ namespace moment4_webbapi.Migrations
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("Genre")
-                        .HasColumnType("TEXT");
 
                     b.Property<int>("Length")
                         .HasColumnType("INTEGER");
