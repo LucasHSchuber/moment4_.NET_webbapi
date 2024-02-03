@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("moment4_webbapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48486b61802620d76f98075b1ea2e1fdb041b1f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ee59cf999ffc84a6afcfcbb2fbd633d75dfd14d")]
 [assembly: System.Reflection.AssemblyProductAttribute("moment4_webbapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("moment4_webbapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
