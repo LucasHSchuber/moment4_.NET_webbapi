@@ -18,7 +18,7 @@ namespace moment4_webbapi.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Artist = table.Column<string>(type: "TEXT", nullable: true),
                     Title = table.Column<string>(type: "TEXT", nullable: true),
-                    Length = table.Column<string>(type: "TEXT", nullable: true),
+                    Length = table.Column<int>(type: "INTEGER", nullable: false),
                     Genre = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>

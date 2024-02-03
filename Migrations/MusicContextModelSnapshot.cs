@@ -27,8 +27,8 @@ namespace moment4_webbapi.Migrations
                     b.Property<string>("Genre")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Length")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Length")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");

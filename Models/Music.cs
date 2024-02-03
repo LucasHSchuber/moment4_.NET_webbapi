@@ -14,7 +14,7 @@ namespace moment4_webbapi.Models
         public int SongId { get; set; }
         public string? Artist { get; set; }
         public string? Title { get; set; }
-        public string? Length { get; set; }
+        public int Length { get; set; }
         public string? Genre { get; set; }
 
     }

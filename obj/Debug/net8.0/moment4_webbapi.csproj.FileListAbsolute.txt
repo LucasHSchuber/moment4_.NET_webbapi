@@ -276,3 +276,4 @@
 /Users/lucash.schuber/Desktop/NET/moment4_webbapi/obj/Debug/net8.0/moment4_webbapi.pdb
 /Users/lucash.schuber/Desktop/NET/moment4_webbapi/obj/Debug/net8.0/moment4_webbapi.genruntimeconfig.cache
 /Users/lucash.schuber/Desktop/NET/moment4_webbapi/obj/Debug/net8.0/ref/moment4_webbapi.dll
+/Users/lucash.schuber/Desktop/NET/moment4_webbapi/obj/Debug/net8.0/moment4_webbapi.sourcelink.json
