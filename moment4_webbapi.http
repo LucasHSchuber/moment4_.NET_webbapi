@@ -1,0 +1,6 @@
+@moment4_webbapi_HostAddress = http://localhost:5221
+
+GET {{moment4_webbapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
