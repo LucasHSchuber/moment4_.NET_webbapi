@@ -14,4 +14,7 @@ public class MusicContext : DbContext
 
     public DbSet<Music> Music { get; set; } = default!;
 
+     public DbSet<Category> Category { get; set; } = default!;
+
+
 }

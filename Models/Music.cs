@@ -12,10 +12,15 @@ namespace moment4_webbapi.Models
         //properties
         [Key]
         public int SongId { get; set; }
-        public string? Artist { get; set; }
+        public string? ArtistName { get; set; }
         public string? Title { get; set; }
         public int Length { get; set; }
         public string? Genre { get; set; }
+        //FK
+        public int CategoryId { get; set; }
+        //navigation property
+        public virtual Category? Category { get; set; }
+
 
     }
 

@@ -15,14 +15,31 @@ namespace moment4_webbapi.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.1");
 
+            modelBuilder.Entity("moment4_webbapi.Models.Category", b =>
+                {
+                    b.Property<int>("CategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CategoryName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("CategoryId");
+
+                    b.ToTable("Category");
+                });
+
             modelBuilder.Entity("moment4_webbapi.Models.Music", b =>
                 {
                     b.Property<int>("SongId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Artist")
+                    b.Property<string>("ArtistName")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Genre")
                         .HasColumnType("TEXT");
@@ -35,7 +52,25 @@ namespace moment4_webbapi.Migrations
 
                     b.HasKey("SongId");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Music");
+                });
+
+            modelBuilder.Entity("moment4_webbapi.Models.Music", b =>
+                {
+                    b.HasOne("moment4_webbapi.Models.Category", "Category")
+                        .WithMany("Musics")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("moment4_webbapi.Models.Category", b =>
+                {
+                    b.Navigation("Musics");
                 });
 #pragma warning restore 612, 618
         }
